@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
-import Ionoicons from "react-native-vector-icons/Ionicons"
+import FeatherIcon from "react-native-vector-icons/Feather"
 import { BlurView } from 'expo-blur'
 import colors from '../../config/constants/colors'
 import spacing from '../../config/constants/spacing'
@@ -11,7 +11,8 @@ const Header = () => {
         <View style={{
             flexDirection: "row",
             justifyContent: "space-between",
-            alignItems: "center"
+            alignItems: "center",
+            padding: spacing
         }}>
             <TouchableOpacity
                 style={{
@@ -22,13 +23,15 @@ const Header = () => {
             >
                 <BlurView
                     style={{
-                        height: "100%",
-                        width: "100%",
+                        height: spacing * 4,
+                        width: spacing * 4,
                         alignItems: "center",
                         justifyContent: "center"
                     }}
+                    tint="dark"
+                    intensity={20}
                 >
-                    <Ionoicons name="menu" color={colors.dark} size={spacing * 2.5} />
+                    <FeatherIcon name="align-left" color={colors.dark} size={spacing * 2.5} />
                 </BlurView>
             </TouchableOpacity>
 

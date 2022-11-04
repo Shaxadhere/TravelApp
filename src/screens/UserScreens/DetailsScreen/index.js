@@ -9,10 +9,7 @@ import { BlurView } from 'expo-blur'
 const { height } = Dimensions.get("window")
 
 const DetailsScreen = ({ route, navigation }) => {
-
     const { post } = route.params;
-    // const post = posts[2]
-
     return (
         <View>
             <SafeAreaView>
