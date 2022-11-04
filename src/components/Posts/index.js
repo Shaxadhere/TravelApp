@@ -8,7 +8,7 @@ import Ionoicons from "react-native-vector-icons/Ionicons"
 
 const { width, height } = Dimensions.get("window")
 
-const Posts = () => {
+const Posts = ({ navigation }) => {
     return (
         <>
             <View style={{ flexDirection: "row", justifyContent: "space-between", padding: spacing }}>
@@ -58,50 +58,52 @@ const Posts = () => {
                             borderRadius: spacing * 2
                         }}
                     >
-                        <BlurView
-                            tint='dark'
-                            intensity={50}
-                            style={{
-                                borderTopStartRadius: 0,
-                                borderTopEndRadius: 0,
-                                borderRadius: spacing * 2,
-                                marginTop: spacing * 10,
-                                padding: spacing,
-                                height: spacing * 6
-                            }}
-                        >
-                            <Text
+                        <TouchableOpacity onPress={() => navigation.navigate("Details", { post: item })}>
+                            <BlurView
+                                tint='dark'
+                                intensity={50}
                                 style={{
-                                    fontFamily: "BridgeText-Medium",
-                                    color: colors.white,
-                                    fontSize: spacing * 1.2
+                                    borderTopStartRadius: 0,
+                                    borderTopEndRadius: 0,
+                                    borderRadius: spacing * 2,
+                                    marginTop: spacing * 10,
+                                    padding: spacing,
+                                    height: spacing * 6
                                 }}
                             >
-                                {item.title}
-                            </Text>
-                            <View style={{ marginTop: spacing * 0.5, flexDirection: "row", alignItems: "center" }}>
-                                {new Array(5).fill(0).map((item, index) =>
-                                    <Ionoicons
-                                        style={{
-                                            marginRight: spacing * 0.2
-                                        }}
-                                        key={index}
-                                        name='star'
-                                        size={spacing}
-                                        color={colors.gold}
-                                    />
-                                )}
                                 <Text
                                     style={{
+                                        fontFamily: "BridgeText-Medium",
                                         color: colors.white,
-                                        fontWeight: "600",
                                         fontSize: spacing * 1.2
                                     }}
                                 >
-                                    {item.rating}
+                                    {item.title}
                                 </Text>
-                            </View>
-                        </BlurView>
+                                <View style={{ marginTop: spacing * 0.5, flexDirection: "row", alignItems: "center" }}>
+                                    {new Array(5).fill(0).map((item, index) =>
+                                        <Ionoicons
+                                            style={{
+                                                marginRight: spacing * 0.2
+                                            }}
+                                            key={index}
+                                            name='star'
+                                            size={spacing}
+                                            color={colors.gold}
+                                        />
+                                    )}
+                                    <Text
+                                        style={{
+                                            color: colors.white,
+                                            fontWeight: "600",
+                                            fontSize: spacing * 1.2
+                                        }}
+                                    >
+                                        {item.rating}
+                                    </Text>
+                                </View>
+                            </BlurView>
+                        </TouchableOpacity>
                     </ImageBackground>
                 )}
             </View>

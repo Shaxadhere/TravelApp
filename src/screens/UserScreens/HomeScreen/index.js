@@ -13,7 +13,7 @@ import Posts from '../../../components/Posts'
 import Carousel from 'react-native-snap-carousel';
 const { width, height } = Dimensions.get("window")
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
     const [category, setCategory] = useState(null)
     const carouselRef = useRef()
     return (
@@ -124,7 +124,7 @@ const HomeScreen = () => {
                     />
 
 
-                    <Posts />
+                    <Posts navigation={navigation} />
 
 
                 </ScrollView>

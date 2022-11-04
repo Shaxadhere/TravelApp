@@ -22,7 +22,7 @@
         "**/yarn.lock": true,
         "**/android": true,
         "**/ios": true,
-        "**/babel.config.js": true,
+        // "**/babel.config.js": true,
         "**/.bundle": true
     }
 }

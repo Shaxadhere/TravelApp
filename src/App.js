@@ -7,11 +7,10 @@ import IntroScreen from './screens/WalkthroughScreens/IntroScreen';
 
 const Stack = createNativeStackNavigator();
 
-
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Intro">
+      <Stack.Navigator initialRouteName="Home">
         <Stack.Screen
           options={{
             headerShown: false,

@@ -7,7 +7,7 @@ import Ionicons from "react-native-vector-icons/Ionicons"
 const heroImage = require("../../../assets/hero.jpg")
 const { height, width } = Dimensions.get("window")
 
-const IntroScreen = () => {
+const IntroScreen = ({ navigation }) => {
     return (
         <View style={{ flex: 1, backgroundColor: colors.white }}>
             <SafeAreaView>
@@ -46,6 +46,7 @@ const IntroScreen = () => {
                         </Text>
 
                         <TouchableOpacity
+                            onPress={() => navigation.navigate("Home")}
                             style={{
                                 flexDirection: "row",
                                 backgroundColor: colors.primary,
