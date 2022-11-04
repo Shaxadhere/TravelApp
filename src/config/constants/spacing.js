@@ -1,0 +1,1 @@
+export default SPACING = 10

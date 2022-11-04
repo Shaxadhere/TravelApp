@@ -1,0 +1,45 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/bridge-text/BridgeText-Bold.otf",
+      "sha1": "a2af2c98b1e3ddd48b02d4c8bb8c1c0ee21756e8"
+    },
+    {
+      "path": "src/assets/fonts/bridge-text/BridgeText-BoldItalic.otf",
+      "sha1": "2764d625d40ef232039d50970dbabe37b3e4278d"
+    },
+    {
+      "path": "src/assets/fonts/bridge-text/BridgeText-Light.otf",
+      "sha1": "f52e1dbbc937f2e4c1224c48f565edf4f17d16cd"
+    },
+    {
+      "path": "src/assets/fonts/bridge-text/BridgeText-LightItalic.otf",
+      "sha1": "8edabbc5a0c6c4b7973a0597382e7a40e528f3ad"
+    },
+    {
+      "path": "src/assets/fonts/bridge-text/BridgeText-Medium.otf",
+      "sha1": "4fff6dcfa72a3e5e4a153e7c73610592dfa0dcb3"
+    },
+    {
+      "path": "src/assets/fonts/bridge-text/BridgeText-MediumItalic.otf",
+      "sha1": "7dfc31164f800ad1fcbca9f6fe07fcd340d78018"
+    },
+    {
+      "path": "src/assets/fonts/bridge-text/BridgeText-Regular.otf",
+      "sha1": "aba6e95b30ec8c0b29f7dec87cd0ce9e48af7061"
+    },
+    {
+      "path": "src/assets/fonts/bridge-text/BridgeText-RegularItalic.otf",
+      "sha1": "70f0516ca4fe9e4098f9b118876f908ee9b821b4"
+    },
+    {
+      "path": "src/assets/fonts/bridge-text/BridgeText-xBold.otf",
+      "sha1": "f8c06c450e8b98250f736d6c36de27b086f90dee"
+    },
+    {
+      "path": "src/assets/fonts/bridge-text/BridgeText-xBoldItalic.otf",
+      "sha1": "96b406d0a2b92861eb32dadf22847e6f0272760e"
+    }
+  ]
+}
