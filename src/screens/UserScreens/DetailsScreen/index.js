@@ -24,11 +24,19 @@ const DetailsScreen = ({ route, navigation }) => {
                             height: "100%",
                             width: "100%",
                         }}>
-                        <BlurView style={{ padding: spacing * 1.2 }}>
-                            <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-                                <Ionicons name="arrow-back" color={colors.dark} size={spacing * 2} />
-                            </TouchableOpacity>
-                        </BlurView>
+                        <View style={{ padding: spacing }}>
+                            <BlurView tint='dark' style={{
+                                width: spacing * 4,
+                                height: spacing * 4,
+                                alignItems: "center",
+                                justifyContent: 'center',
+                                borderRadius: spacing
+                            }}>
+                                <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+                                    <Ionicons name="arrow-back" color={colors.white} size={spacing * 2} />
+                                </TouchableOpacity>
+                            </BlurView>
+                        </View>
                     </ImageBackground>
 
                     <View style={{
